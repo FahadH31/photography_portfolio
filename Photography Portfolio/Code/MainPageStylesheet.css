@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
+
+/*Navigation Bar */
+#logo {
+    height: 50px;
+    margin-top: -3.5px;
+    margin-right: 10px;
+}
+
+.navbar-light {
+    background-image: linear-gradient(to left, white, #F0EEE4);
+    font-size: 17pt;
+    font-weight: 700;
+    font-family: 'Julee', cursive;
+}
+
+/*Home Text*/
+#homeHeading {
+    color: #F0EEE4;
+    font-family: 'Julee', cursive;
+    font-size: 55pt;
+    text-align: center;
+    padding: 1cm;
+    padding-bottom: 0cm;
+}
+
+/*Buttons*/
+#buttonContainer {
+    margin-top: -0.6cm;
+    text-align: center;
+    margin-bottom: 1cm;
+}
+
+.btn-dark {
+    background-color: #F0EEE4;
+    color: black;
+    font-family: 'Julee', cursive;
+    margin-left: 0.2cm;
+    margin-right: 0.2cm;
+}
+
+/*Images*/
+#divContainer {
+    text-align: center;
+}
+
+.portraitContainer {
+    display: inline-block;
+
+    width: 20vw;
+    height: auto;
+    margin-right: 0.5cm;
+    margin-left: 0.5cm;
+    margin-bottom: 2cm;
+}
+
+.portraitContainer:hover {
+    /*Show hand when hovering over image*/
+    cursor: pointer;
+    opacity: 0.7;
+    /*Fade into selection effect*/
+    transition: .5s;
+}
+
+.landscapeContainer {
+    display: inline-block;
+
+    width: 40vw;
+    height: auto;
+
+    margin-right: 0.5cm;
+    margin-left: 0.5cm;
+    margin-bottom: 2cm;
+}
+
+.landscapeContainer:hover {
+    /*Show hand when hovering over image*/
+    cursor: pointer;
+    opacity: 0.7;
+    transition: .5s;
+}
+
+img {
+    /*Ensures image proportions/aspect ratio stays correct*/
+    max-width: 100%;
+    max-height: auto;
+}
+
+body {
+    background-color: #18191a;
+    margin-bottom: 15cm;
+}
+
+/*Modals*/
+#pt {
+    max-width: 30vw;
+    /*To center vertically*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ls {
+    max-width: 50vw;
+    /*To center vertically*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.modal-body {
+    /*Creates border for image*/
+    padding: 0.1cm;
+    background-color: #18191a;
+}
+
+.close {
+    /*Allows the 'x' button to hover over the image*/
+    position: fixed;
+}
+
+
+
+/*Filtering*/
+.filterDiv {
+    /* Hidden by default */
+    display: none;
+}
+
+.show {
+    display: inline-block;
+    transition: .5s all;
+    animation: fadeEffect 1s;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
