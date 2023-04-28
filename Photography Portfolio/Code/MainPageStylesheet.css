@@ -6,9 +6,12 @@
     margin-top: -3.5px;
     margin-right: 10px;
 }
-
 .navbar-light {
     background-image: linear-gradient(to left, white, #F0EEE4);
+    margin-bottom: 1cm;
+}
+.nav-link{
+    transition: .5s;
     font-size: 17pt;
     font-weight: 700;
     font-family: 'Julee', cursive;
@@ -18,25 +21,39 @@
 #homeHeading {
     color: #F0EEE4;
     font-family: 'Julee', cursive;
-    font-size: 55pt;
+    font-size: 35pt;
     text-align: center;
-    padding: 1cm;
-    padding-bottom: 0cm;
 }
 
-/*Buttons*/
-#buttonContainer {
-    margin-top: -0.6cm;
-    text-align: center;
-    margin-bottom: 1cm;
-}
 
-.btn-dark {
-    background-color: #F0EEE4;
-    color: black;
-    font-family: 'Julee', cursive;
-    margin-left: 0.2cm;
-    margin-right: 0.2cm;
+/*Sidebar*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    right: 0;
+    background-image: linear-gradient(to left, #F0EEE4,white);
+    overflow: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #18191a;
+    text-decoration: none;
+  }
+.side-link{
+    display: block;
+    color: gray;
+}
+.side-link:hover{
+    color: #18191a;
 }
 
 /*Images*/
@@ -121,7 +138,6 @@ body {
     /*Allows the 'x' button to hover over the image*/
     position: fixed;
 }
-
 
 
 /*Filtering*/

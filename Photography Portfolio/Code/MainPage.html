@@ -21,7 +21,7 @@
     <!--Navigation Bar-->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
+            <ul class="navbar-nav me-auto">
                 <!--Logo-->
                 <li class="nav-bar brand">
                     <img id=logo src="Logos/Initals Logo (Transparent Background).png" class="d-inline-block align-top">
@@ -33,34 +33,29 @@
                 <li class="nav-item">
                     <a class="nav-link" href="AboutPage.html">About</a>
                 </li>
-
+            </ul>
+            <ul class="navbar-nav ml-md-auto">
+                <li class="nav-item">
+                    <!--SideBar Button-->
+                    <a href="javascript:" class="nav-link" id="openSideBarLink" onclick="openNav()">&#9776;</a>
+                </li>
             </ul>
         </div>
     </nav>
 
     <!--Page Title-->
-    <div id=homeHeading>
-        <p>GALLERY</p>
-    </div>
-
-    <!--Buttons-->
-    <div id = buttonContainer>
-        <button type="button" class="btn btn-dark btn-lg" onclick="filterSelection('all')">All</button>
-        <button type="button" class="btn btn-dark btn-lg" onclick="filterSelection('animals')">Animals</button>
-        <button type="button" class="btn btn-dark btn-lg" onclick="filterSelection('city')">Cityscape</button>
-        <button type="button" class="btn btn-dark btn-lg" onclick="filterSelection('items')">Items</button>
-        <button type="button" class="btn btn-dark btn-lg" onclick="filterSelection('nature')">Nature</button>
-        <button type="button" class="btn btn-dark btn-lg" onclick="filterSelection('vehicles')">Vehicles</button>
+    <div id = "homeHeading">
+        <p>Photos</p>
     </div>
 
     <!-- Portrait Modal -->
     <div class="modal fade" id="portraitImageModal" role="dialog">
-        <div class="modal-dialog" id = "pt">
+        <div class="modal-dialog" id="pt">
             <!-- Modal Content-->
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <img id = portraitModalImageOutput>
+                    <img id=portraitModalImageOutput>
                 </div>
             </div>
         </div>
@@ -68,12 +63,12 @@
 
     <!-- Landscape Modal -->
     <div class="modal fade" id="landscapeImageModal" role="dialog">
-        <div class="modal-dialog" id = "ls">
+        <div class="modal-dialog" id="ls">
             <!-- Modal Content-->
             <div class="modal-content">
                 <div class="modal-body">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <img id = landscapeModalImageOutput>
+                    <img id=landscapeModalImageOutput>
                 </div>
             </div>
         </div>
@@ -83,310 +78,322 @@
     <!--Images-->
     <div id=divContainer>
         <!--First Row-->
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Fall Street.PNG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv city">
+        <div class="portraitContainer filterDiv City">
             <img src="Camera Pictures/Basketball Court.png" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
-            <img src="Camera Pictures/Grand Canyon Right Cliff.PNG" data-toggle="modal" data-target="#portraitImageModal">
+        <div class="portraitContainer filterDiv Nature">
+            <img src="Camera Pictures/Grand Canyon Right Cliff.PNG" data-toggle="modal"
+                data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/White Moon 1.PNG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
         <!--Second Row-->
-        <div class = "landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/3 Tree Colors.PNG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv city">
+        <div class="landscapeContainer filterDiv City">
             <img src="Camera Pictures/Vegas Strip.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Third Row-->
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Agakhan Museum.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv vehicles">
+        <div class="portraitContainer filterDiv Vehicles">
             <img src="Camera Pictures/Air Canada Express 2.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv vehicles">
+        <div class="portraitContainer filterDiv Vehicles">
             <img src="Camera Pictures/Air Canada Express 3.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Dreamworks.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
         <br>
 
         <!--Fourth and Fifth Row-->
-        <div class = "landscapeContainer filterDiv nature" style="width: 60vw;">
+        <div class="landscapeContainer filterDiv Nature" style="width: 60vw;">
             <img src="Camera Pictures/Orange Moon.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv nature">
-            <img src="Camera Pictures/Orange Moon 2.jpeg"data-toggle="modal" data-target="#landscapeImageModal">
+        <div class="landscapeContainer filterDiv Nature">
+            <img src="Camera Pictures/Orange Moon 2.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Orange Moon 3.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
         <br>
 
         <!--Sixth Row-->
-        <div class = "portraitContainer filterDiv">
+        <div class="portraitContainer filterDiv">
             <img src="Camera Pictures/Basketball Net.JPG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Tree Sunset.PNG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv city">
+        <div class="portraitContainer filterDiv City">
             <img src="Camera Pictures/Statue Of Liberty.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv city">
+        <div class="portraitContainer filterDiv City">
             <img src="Camera Pictures/Hoover Dam River 2.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
         <!--Seventh Row-->
-        <div class = "portraitContainer filterDiv city">
+        <div class="portraitContainer filterDiv City">
             <img src="Camera Pictures/Coca Cola Bottle.JPG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv items">
+        <div class="portraitContainer filterDiv Items">
             <img src="Camera Pictures/Galileo Thermometer 1.png" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv items">
+        <div class="portraitContainer filterDiv Items">
             <img src="Camera Pictures/Galileo Thermometer 2.PNG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv items">
+        <div class="portraitContainer filterDiv Items">
             <img src="Camera Pictures/Galileo Thermometer 3.png" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
-         <!--Eighth Row-->
-         <div class = "portraitContainer filterDiv animals">
+        <!--Eighth Row-->
+        <div class="portraitContainer filterDiv Animals">
             <img src="Camera Pictures/Giraffe.png" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "landscapeContainer filterDiv animals">
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Rhinosaurus In Mud.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class = "portraitContainer filterDiv animals">
+        <div class="portraitContainer filterDiv Animals">
             <img src="Camera Pictures/Giraffe 2.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
         <!--Ninth Row-->
-         <div class = "landscapeContainer filterDiv vehicles">
+        <div class="landscapeContainer filterDiv Vehicles">
             <img src="Camera Pictures/Air Canada 2.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv vehicles">
+        <div class="landscapeContainer filterDiv Vehicles">
             <img src="Camera Pictures/Air Canada.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Tenth Row-->
-        <div class = "landscapeContainer filterDiv vehicles">
+        <div class="landscapeContainer filterDiv Vehicles">
             <img src="Camera Pictures/Air Canada Express.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv vehicles">
+        <div class="landscapeContainer filterDiv Vehicles">
             <img src="Camera Pictures/Air Canada Rouge.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Eleventh Row-->
-        <div class = "landscapeContainer filterDiv city">
+        <div class="landscapeContainer filterDiv City">
             <img src="Camera Pictures/CN Tower 1.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv city">
+        <div class="landscapeContainer filterDiv City">
             <img src="Camera Pictures/CN Tower 2.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twelfth Row-->
-        <div class = "portraitContainer filterDiv animals">
+        <div class="portraitContainer filterDiv Animals">
             <img src="Camera Pictures/Brown Bird 1.PNG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
         <br>
 
-         <!--Thirteenth Row-->
-         <div class = "landscapeContainer filterDiv animals">
+        <!--Thirteenth Row-->
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Brown Bird 2.PNG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv animals">
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Brown Bird 3.PNG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Fourteenth Row-->
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Golden Tree.JPG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Hoover Dam River 3.JPG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Red Leaves.JPG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Red Leaves 2.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
         <!--Fifteenth Row-->
-        <div class = "landscapeContainer filterDiv items">
+        <div class="landscapeContainer filterDiv Items">
             <img src="Camera Pictures/Blue Lamp.JPG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv city">
-            <img src="Camera Pictures/Blue Southshore Street.png" data-toggle="modal" data-target="#landscapeImageModal">
+        <div class="landscapeContainer filterDiv City">
+            <img src="Camera Pictures/Blue Southshore Street.png" data-toggle="modal"
+                data-target="#landscapeImageModal">
         </div>
 
         <!--Sixteenth Row-->
-        <div class = "landscapeContainer filterDiv">
+        <div class="landscapeContainer filterDiv">
             <img src="Camera Pictures/Fireworks 1.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
         <div class="landscapeContainer filterDiv">
             <img src="Camera Pictures/Fireworks 2.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
-         <!--Seventeenth Row-->
-         <div class = "portraitContainer filterDiv animals">
+        <!--Seventeenth Row-->
+        <div class="portraitContainer filterDiv Animals">
             <img src="Camera Pictures/Gold Finch 3.png" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "landscapeContainer filterDiv animals">
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Gold Finch 2.PNG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class = "portraitContainer filterDiv animals" style="width: 15%;">
+        <div class="portraitContainer filterDiv Animals" style="width: 15%;">
             <img src="Camera Pictures/Gold Finch 1.PNG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
-         <!--Eighteenth Row-->
-         <div class = "portraitContainer filterDiv nature">
+        <!--Eighteenth Row-->
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Sedona 1.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Sedona 3.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Sedona 2.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
         <!--Ninteenth Row-->
-        <div class = "landscapeContainer filterDiv nature">
-            <img src="Camera Pictures/Grand Canyon Dead Tree.PNG" data-toggle="modal" data-target="#landscapeImageModal">
+        <div class="landscapeContainer filterDiv Nature">
+            <img src="Camera Pictures/Grand Canyon Dead Tree.PNG" data-toggle="modal"
+                data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Grand Canyon.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twentieth Row-->
-        <div class = "landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Grand Canyon Rock.JPG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv city">
+        <div class="landscapeContainer filterDiv City">
             <img src="Camera Pictures/LV Sign.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
-         <!--Twenty-First Row-->
-        <div class = "landscapeContainer filterDiv city">
+        <!--Twenty-First Row-->
+        <div class="landscapeContainer filterDiv City">
             <img src="Camera Pictures/NY City.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv city">
+        <div class="landscapeContainer filterDiv City">
             <img src="Camera Pictures/NY Sign.JPG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twenty-Second Row-->
-        <div class = "landscapeContainer filterDiv city">
+        <div class="landscapeContainer filterDiv City">
             <img src="Camera Pictures/NY Sign 2.JPG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv city">
+        <div class="landscapeContainer filterDiv City">
             <img src="Camera Pictures/Hoover Dam Sign.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twenty-Third Row-->
-        <div class = "landscapeContainer filterDiv vehicles">
+        <div class="landscapeContainer filterDiv Vehicles">
             <img src="Camera Pictures/Goodyear Blimp.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv items">
+        <div class="landscapeContainer filterDiv Items">
             <img src="Camera Pictures/Jack'O Lantern.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twenty-Fourth Row-->
-        <div class = "landscapeContainer filterDiv items">
+        <div class="landscapeContainer filterDiv Items">
             <img src="Camera Pictures/LOTR Book.PNG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv items">
+        <div class="landscapeContainer filterDiv Items">
             <img src="Camera Pictures/LOTR Book 2.JPG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twenty-Fifth Row-->
-        <div class = "landscapeContainer filterDiv">
+        <div class="landscapeContainer filterDiv">
             <img src="Camera Pictures/Light Fixture.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Pink Skies.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twenty-Sixth Row-->
-        <div class = "landscapeContainer filterDiv items">
+        <div class="landscapeContainer filterDiv Items">
             <img src="Camera Pictures/Pocket Watch.jpg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
         <br>
 
         <!--Twenty-Seventh Row-->
-        <div class="landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Stars.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Sunset.JPG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twenty-Eighth Row-->
-        <div class="landscapeContainer filterDiv animals">
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Rhinosaurus.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv animals">
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Rocky Goats.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Twenty-Ninth Row-->
-        <div class="landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Sunset Street 2.JPG " data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Tree Outline 2.JPG" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Thirtieth Row-->
-        <div class="landscapeContainer filterDiv animals">
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Woodpecker 1.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class="landscapeContainer filterDiv animals">
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Woodpecker 2.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
         <!--Thirty-First Row-->
-         <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Tree Outline.JPG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/White Moon 1.PNG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/White Moon 2.JPG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Sunset Street.JPG" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
         <!--Thirty-Second Row-->
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Winter 2.png" data-toggle="modal" data-target="#portraitImageModal">
         </div>
-        <div class="landscapeContainer filterDiv nature">
+        <div class="landscapeContainer filterDiv Nature">
             <img src="Camera Pictures/Winter 1.jpeg" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
-        <div class = "portraitContainer filterDiv nature">
+        <div class="portraitContainer filterDiv Nature">
             <img src="Camera Pictures/Winter 3.jpeg" data-toggle="modal" data-target="#portraitImageModal">
         </div>
 
-         <!--Thirty-Third Row-->
-         <div class="landscapeContainer filterDiv animals">
+        <!--Thirty-Third Row-->
+        <div class="landscapeContainer filterDiv Animals">
             <img src="Camera Pictures/Zebras.png" data-toggle="modal" data-target="#landscapeImageModal">
         </div>
 
     </div>
 
-
+    <!--Sidebar-->
+    <div id="sidebar" class="sidenav">
+        <a href="javascript:" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="javascript:" class="nav-link side-link" onclick="filterSelection('all')">All</a>
+        <a href="javascript:" class="nav-link side-link" onclick="filterSelection('Animals')">Animals</a>
+        <a href="javascript:" class="nav-link side-link" onclick="filterSelection('City')">Cityscape</a>
+        <a href="javascript:" class="nav-link side-link" onclick="filterSelection('Items')">Items</a>
+        <a href="javascript:" class="nav-link side-link" onclick="filterSelection('Nature')">Nature</a>
+        <a href="javascript:" class="nav-link side-link" onclick="filterSelection('Vehicles')">Vehicles</a>
+    </div>
 
     <script src="MainPageScript.js"></script>
 </body>

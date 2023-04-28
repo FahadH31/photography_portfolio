@@ -1,16 +1,13 @@
-//Function for portrait images - runs when the modal is displayed
+// Function for portrait images - runs when the modal is displayed
 $('#portraitImageModal').on('show.bs.modal', function (event) {
     //Get the src link of the respective image
     const respectiveImageSource = event.relatedTarget.src; 
-
     //Create a variable that is assigned to the <img> tag in the html file.
     const outputImage = document.getElementById("portraitModalImageOutput");
-
     //Assign the src of the respective image to that <img> tag.
     outputImage.src = respectiveImageSource;
   })
-
-//Function for landscape images - runs when the modal is displayed
+// Function for landscape images - runs when the modal is displayed
 $('#landscapeImageModal').on('show.bs.modal', function (event) {
     const respectiveImageSource = event.relatedTarget.src; //Get the src of the respective image
     const outputImage = document.getElementById("landscapeModalImageOutput");
@@ -18,11 +15,21 @@ $('#landscapeImageModal').on('show.bs.modal', function (event) {
   })
 
 
+// Set the width of the sidebar to 150px when opened
+function openNav() {
+  document.getElementById("sidebar").style.width = "150px";
+}
+// Set the width of the sidebar to 0 when closed
+function closeNav() {
+  document.getElementById("sidebar").style.width = "0";
+}
+
+
+
 //W3 Schools 'How to filter divs' https://www.w3schools.com/howto/howto_js_filter_elements.asp
 filterSelection("all")
-
 function filterSelection(c) {
-  var x, i;
+  var x, i, mainText;
   x = document.getElementsByClassName("filterDiv");
   if (c == "all") c = "";
   // Add the "show" class to the filtered elements, and remove the "show" class from the elements that are not selected
@@ -30,8 +37,9 @@ function filterSelection(c) {
     w3RemoveClass(x[i], "showPics");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showPics");
   }
+  mainText = document.getElementById("homeHeading");
+  mainText.innerHTML = c;
 }
-
 // Show filtered elements
 function w3AddClass(element, name) {
   var i, arr1, arr2;
@@ -43,7 +51,6 @@ function w3AddClass(element, name) {
     }
   }
 }
-
 // Hide elements that are not selected
 function w3RemoveClass(element, name) {
   var i, arr1, arr2;
@@ -56,5 +63,3 @@ function w3RemoveClass(element, name) {
   }
   element.className = arr1.join(" ");
 }
-
-//Problem is when All is selected, everything already has the show class, so no animation occurs when choosing a filter, since all those images already have the show class.
