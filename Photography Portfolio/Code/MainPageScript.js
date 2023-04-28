@@ -18,7 +18,6 @@ $('#landscapeImageModal').on('show.bs.modal', function (event) {
   })
 
 
-
 //W3 Schools 'How to filter divs' https://www.w3schools.com/howto/howto_js_filter_elements.asp
 filterSelection("all")
 
@@ -28,8 +27,8 @@ function filterSelection(c) {
   if (c == "all") c = "";
   // Add the "show" class to the filtered elements, and remove the "show" class from the elements that are not selected
   for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    w3RemoveClass(x[i], "showPics");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showPics");
   }
 }
 

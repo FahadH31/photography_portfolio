@@ -52,6 +52,8 @@
     margin-right: 0.5cm;
     margin-left: 0.5cm;
     margin-bottom: 2cm;
+    /*Fade out of selectione effect*/
+    transition: .5s;
 }
 
 .portraitContainer:hover {
@@ -71,6 +73,7 @@
     margin-right: 0.5cm;
     margin-left: 0.5cm;
     margin-bottom: 2cm;
+    transition: .5s;
 }
 
 .landscapeContainer:hover {
@@ -127,9 +130,9 @@ body {
     display: none;
 }
 
-.show {
+.showPics {
     display: inline-block;
-    transition: .5s all;
+    /*Animation that plays when images load*/
     animation: fadeEffect 1s;
 }
 
