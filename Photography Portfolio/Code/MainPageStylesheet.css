@@ -17,8 +17,21 @@
     font-family: 'Julee', cursive;
 }
 
-/*Home Text*/
-#homeHeading {
+#search-bar{
+    font-family: 'Julee', cursive;
+    font-weight: 600;
+    font-size: 16pt;
+    color:#00000080;
+    border-width: 0.075cm;
+}
+
+#search-bar::placeholder{
+    color: #1b1b1b80;
+}
+
+
+/*Main Title*/
+#mainTitle {
     color: #F0EEE4;
     font-family: 'Julee', cursive;
     font-size: 35pt;
@@ -28,16 +41,21 @@
 
 /*Sidebar*/
 .sidenav {
-    height: 100%; /* 100% Full-height */
-    width: 0; /* 0 width - change this with JavaScript */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
+    height: 100%;
+    width: 0;
+    /* Stay in place */
+    position: fixed; 
+    /* Stay on top of all other content */
+    z-index: 1; 
+    top: 0; 
     right: 0;
     background-image: linear-gradient(to left, #F0EEE4,white);
-    overflow: hidden; /* Disable horizontal scroll */
-    padding-top: 60px; /* Place content 60px from the top */
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    /* Disable horizontal scroll */
+    overflow: hidden; 
+    padding-top: 60px;
+    /*Slide in the sidenav */ 
+    transition: 0.5s; 
+    text-align: center;
   }
 .sidenav .closebtn {
     position: absolute;
@@ -50,9 +68,11 @@
   }
 .side-link{
     display: block;
+    /*Originally grayed-out, like the nav-bar*/
     color: gray;
 }
 .side-link:hover{
+    /*Becomes true color when hovered over*/
     color: #18191a;
 }
 
@@ -69,7 +89,7 @@
     margin-right: 0.5cm;
     margin-left: 0.5cm;
     margin-bottom: 2cm;
-    /*Fade out of selectione effect*/
+    /*Fade out of selection effect*/
     transition: .5s;
 }
 
