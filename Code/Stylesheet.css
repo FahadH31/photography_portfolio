@@ -99,7 +99,7 @@
 /*Images*/
 #divContainer {
     text-align: center;
-    margin-top: 2cm;
+    margin-top: 1cm;
     /*Fixes the spacing issues between top of page and top images (when applied filter)*/
     font-size: 0;
 }
@@ -107,11 +107,11 @@
 .portraitContainer {
     display: inline-block;
 
-    width: 20vw;
+    width: 15vw;
     height: auto;
-    margin-right: 0.5cm;
-    margin-left: 0.5cm;
-    margin-bottom: 2cm;
+    margin-right: 0.2cm;
+    margin-left: 0.2cm;
+    margin-bottom: 1cm;
     /*Fade out of selection effect*/
     transition: .5s;
 }
@@ -127,12 +127,12 @@
 .landscapeContainer {
     display: inline-block;
 
-    width: 40vw;
+    width: 25vw;
     height: auto;
 
-    margin-right: 0.5cm;
-    margin-left: 0.5cm;
-    margin-bottom: 2cm;
+    margin-right: 0.2cm;
+    margin-left: 0.2cm;
+    margin-bottom: 1cm;
     transition: .5s;
 }
 
@@ -151,7 +151,7 @@ img {
 
 body {
     background-color: #18191a;
-    margin-bottom: 15cm;
+    margin-bottom: 10cm;
 }
 
 /*Modals*/
