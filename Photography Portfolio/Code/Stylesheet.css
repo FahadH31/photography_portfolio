@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
 
+
+/*About Page*/
 #mainLogo {
     margin-left: auto;
     margin-right: auto;
@@ -53,15 +55,6 @@
 }
 
 
-/*Main Title*/
-#mainTitle {
-    color: #F0EEE4;
-    font-family: 'Julee', cursive;
-    font-size: 35pt;
-    text-align: center;
-}
-
-
 /*Sidebar*/
 .sidenav {
     height: 100%;
@@ -105,6 +98,9 @@
 /*Images*/
 #divContainer {
     text-align: center;
+    margin-top: 2cm;
+    /*Fixes the spacing issues between top of page and top images (when applied filter)*/
+    font-size: 0;
 }
 
 .portraitContainer {

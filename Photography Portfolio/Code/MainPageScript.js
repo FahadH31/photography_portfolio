@@ -29,7 +29,6 @@
 
 
 
-
 //ORGANIZATION FILTERS------------------------------------------------------------------------------------------------------------------------ 
   //(W3 Schools 'How to filter divs' https://www.w3schools.com/howto/howto_js_filter_elements.asp)
     filterSelection("all")
@@ -42,8 +41,6 @@
         w3RemoveClass(x[i], "showPics");
         if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showPics");
       }
-      mainText = document.getElementById("mainTitle");
-      mainText.innerHTML = c;
     }
     // Show filtered elements
     function w3AddClass(element, name) {
@@ -100,4 +97,11 @@ function searchFunction() {
       portraitClass[i].style.display = "none";
     }
   }
+
+
+
+
+
+
+
 }
