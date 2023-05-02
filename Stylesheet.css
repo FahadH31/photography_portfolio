@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Julee&display=swap');
 
 /*Lazy-Loading*/
-img.lazy-load {
+.lazy-load {
     background: #ececec;
-  }
+}
 
 /*About Page*/
 #mainLogo {
@@ -19,13 +19,20 @@ img.lazy-load {
     transition: 2s;
 }
 
-#mainText{
+#mainText {
     text-align: center;
     color: gray;
     font-family: 'Julee', cursive;
     font-size: 20pt;
     animation: fadeEffect 1s;
     margin-bottom: -15cm;
+}
+
+@media screen and (max-device-width: 768px) {
+    #mainLogo:hover {
+        width: 300px;
+    }
+
 }
 
 /*Navigation Bar */
@@ -58,7 +65,6 @@ img.lazy-load {
 #search-bar::placeholder {
     color: #1b1b1b80;
 }
-
 
 /*Sidebar*/
 .sidenav {
@@ -206,5 +212,54 @@ body {
 
     to {
         opacity: 1;
+    }
+}
+
+/*For Mobile/Smaller Screens*/
+@media screen and (max-width: 768px) {
+    .navbar-light {
+        width: auto;
+        height: auto;
+    }
+
+    #search-bar {
+        width: 35vw;
+    }
+
+    #search-bar::placeholder {
+        color: white;
+    }
+
+    #logo {
+        width: 0cm;
+    }
+
+    .portraitContainer {
+        width: 30vw;
+        margin-bottom: 0.5cm;
+    }
+
+    .landscapeContainer {
+        width: 45vw;
+        margin-bottom: 0.5cm;
+    }
+}
+
+/*Modals on vertically oriented mobile devices*/
+@media screen and (orientation:portrait) and (max-width: 768px) {
+    #pt {
+        max-width: 90vw;
+        /*To center vertically*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #ls {
+        max-width: 90vw;
+        /*To center vertically*/
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
     }
 }

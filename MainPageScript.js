@@ -1,30 +1,3 @@
-//LAZY LOADING----------------------------------------------------------------------------------------
-function preload_image(img) {
-  img.src = img.dataset.src;
-  console.log(`Loading ${img.src}`);
-}
-
-const config_opts = {
-  rootMargin: '300px 300px 300px 300px'
-};
-
-let observer = new IntersectionObserver(function(entries, self) {
-  for(entry of entries) { 
-    if(entry.isIntersecting) {
-      let elem = entry.target;
-      preload_image(elem);   
-      self.unobserve(elem);
-    }
-  }
-}, config_opts);
-
-let images = document.querySelectorAll('img.lazy-load');
-
-for(image of images) {
-  observer.observe(image);
-}
-
-
 //IMAGE POP-UP MODALS----------------------------------------------------------------------------------    
     // Function for portrait images - runs when the modal is displayed
     $('#portraitImageModal').on('show.bs.modal', function (event) {
