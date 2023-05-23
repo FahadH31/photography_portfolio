@@ -45,6 +45,9 @@
 .navbar-light {
     background-image: linear-gradient(to left, white, #F0EEE4);
     margin-bottom: 1cm;
+    /*Countering of Overall Body Margins*/
+    margin-left: -1vw;
+    margin-right: -1vw;
 }
 
 .nav-link {
@@ -162,6 +165,8 @@ img {
 body {
     background-color: #18191a;
     margin-bottom: 10cm;
+    margin-left: 1vw;
+    margin-right: 1vw;
 }
 
 /*Modals*/
