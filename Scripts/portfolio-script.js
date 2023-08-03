@@ -14,30 +14,28 @@ function searchFunction() {
   var searchBar, enteredFilter, landscapeClass, portraitClass, getImage, i, altValue;
   searchBar = document.getElementById('search-bar');
   enteredFilter = searchBar.value.toUpperCase();
-  landscapeClass = document.getElementsByClassName("landscapeContainer");
+  landscapeClass = document.getElementsByClassName('landscapeContainer');
   portraitClass = document.getElementsByClassName('portraitContainer');
+  panoramicClass = document.getElementsByClassName('panoramicContainer');
+
+  function loopContainer(containerType){
+    for (i = 0; i < containerType.length; i++) {
+      getImage = containerType[i].getElementsByTagName("img")[0];
+      altValue = getImage.alt;
+      if (altValue.toUpperCase().indexOf(enteredFilter) > -1) {
+        containerType[i].style.display = "";
+      } else {
+        containerType[i].style.display = "none";
+      }
+    }
+  }
 
   // Loop through all landscape pictures, and hide those that don't match the search query
-  for (i = 0; i < landscapeClass.length; i++) {
-    getImage = landscapeClass[i].getElementsByTagName("img")[0];
-    altValue = getImage.alt;
-    if (altValue.toUpperCase().indexOf(enteredFilter) > -1) {
-      landscapeClass[i].style.display = "";
-    } else {
-      landscapeClass[i].style.display = "none";
-    }
-  }
-
+  loopContainer(landscapeClass);
   //Loop through all portrait pictures, and hide those that don't match the search query
-  for (i = 0; i < portraitClass.length; i++) {
-    getImage = portraitClass[i].getElementsByTagName("img")[0];
-    altValue = getImage.alt;
-    if (altValue.toUpperCase().indexOf(enteredFilter) > -1) {
-      portraitClass[i].style.display = "";
-    } else {
-      portraitClass[i].style.display = "none";
-    }
-  }
+  loopContainer(portraitClass);
+  // Loop through all panoramic pictures, and hide those that don't match the search query
+  loopContainer(panoramicClass);
 }
 
 //LIST OF IMAGES ARRAY
@@ -135,7 +133,7 @@ const imageList = [
   {
     orientation: "portrait",
     type: "City",
-    source: "Photos/Statue of Liberty.jpeg",
+    source: "Photos/Statue Of Liberty.jpeg",
     tags: "Statue Liberty New York Las Vegas"
   },
   {
