@@ -81,12 +81,6 @@ const imageList = [
     {
       orientation: "portrait",
       type: "Nature",
-      source: "Photos/Basketball Net.JPG",
-      tags: "Basketball Net Trees"
-    },
-    {
-      orientation: "portrait",
-      type: "Nature",
       source: "Photos/Tree Sunset.jpg",
       tags: "Sunset Trees"
     },
@@ -350,12 +344,6 @@ const imageList = [
     },
     {
       orientation: "landscape",
-      type: "Objects",
-      source: "Photos/LOTR Book 2.JPG",
-      tags: "Lord of the Rings Book"
-    },
-    {
-      orientation: "landscape",
       type: "",
       source: "Photos/Light Fixture.jpg",
       tags: "Shiny Light Fixture Golden"
@@ -572,12 +560,6 @@ const imageList = [
     },
     {
       orientation: "portrait" ,
-      type: "City",
-      source: "Photos/Toronto Building.jpg" ,
-      tags: "Toronto Building"
-    },
-    {
-      orientation: "portrait" ,
       type: "Vehicles",
       source: "Photos/CRV Back Light.jpg" ,
       tags: "Car Back Light"
@@ -622,12 +604,6 @@ const imageList = [
       orientation: "portrait" ,
       type: "City",
       source: "Photos/Tunnel 1.jpg" ,
-      tags: "Tunnel Lights Red Purple"
-    },
-    {
-      orientation: "portrait" ,
-      type: "City",
-      source: "Photos/Tunnel 2.jpg" ,
       tags: "Tunnel Lights Red Purple"
     },
     {
@@ -797,12 +773,6 @@ const imageList = [
       type: "Animals",
       source: "Photos/Mourning Dove Sitting.jpg" ,
       tags: "Mourning Dove Bird"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Objects",
-      source: "Photos/PG3s.jpg" ,
-      tags: "Shoes Paul George PG3s"
     },
     {
       orientation: "portrait" ,
@@ -990,10 +960,4 @@ const imageList = [
       source: "Photos/Fluffy Clouds 2.jpg" ,
       tags: "Clouds Blue Sky"
     },
-    {
-      orientation: "landscape" ,
-      type: "Objects",
-      source: "Photos/Jurassic Park Adventure Pack.jpg" ,
-      tags: "Jurassic Park"
-    }
   ];
