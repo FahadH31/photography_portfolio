@@ -50,12 +50,6 @@ const imageList = [
     },
     {
       orientation: "portrait",
-      type: "Vehicles",
-      source: "Photos/Air Canada Express 3.jpeg",
-      tags: "Air Canada Plane"
-    },
-    {
-      orientation: "portrait",
       type: "Nature",
       source: "Photos/Dreamworks.jpeg",
       tags: "Moon Sky"
@@ -64,12 +58,6 @@ const imageList = [
       orientation: "landscape",
       type: "Nature",
       source: "Photos/Orange Moon.jpg",
-      tags: "Orange Moon"
-    },
-    {
-      orientation: "landscape",
-      type: "Nature",
-      source: "Photos/Orange Moon 2.jpeg",
       tags: "Orange Moon"
     },
     {
@@ -105,12 +93,6 @@ const imageList = [
     {
       orientation: "portrait",
       type: "Objects",
-      source: "Photos/Galileo Thermometer 1.jpg",
-      tags: "Galileo Thermometer"
-    },
-    {
-      orientation: "portrait",
-      type: "Objects",
       source: "Photos/Galileo Thermometer 2.jpg",
       tags: "Galileo Thermometer"
     },
@@ -131,12 +113,6 @@ const imageList = [
       type: "Animals",
       source: "Photos/Rhinosaurus In Mud.jpg",
       tags: "Rhinoceros"
-    },
-    {
-      orientation: "portrait",
-      type: "Animals",
-      source: "Photos/Giraffe 2.jpeg",
-      tags: "Giraffe"
     },
     {
       orientation: "landscape",
@@ -187,18 +163,6 @@ const imageList = [
       tags: "Brown Bird"
     },
     {
-      orientation: "landscape",
-      type: "Animals",
-      source: "Photos/Brown Bird 3.jpg",
-      tags: "Brown Bird"
-    },
-    {
-      orientation: "portrait",
-      type: "Nature",
-      source: "Photos/Golden Tree.JPG",
-      tags: "Golden Tree Fall Colors Yellow"
-    },
-    {
       orientation: "portrait",
       type: "Nature",
       source: "Photos/Hoover Dam River 3.JPG",
@@ -215,12 +179,6 @@ const imageList = [
       type: "Nature",
       source: "Photos/Red Leaves 2.jpeg",
       tags: "Red Trees Fall Colors Leaves"
-    },
-    {
-      orientation: "landscape",
-      type: "Objects",
-      source: "Photos/Blue Lamp.JPG",
-      tags: "Blue Lamp"
     },
     {
       orientation: "landscape",
@@ -257,12 +215,6 @@ const imageList = [
       type: "Animals",
       source: "Photos/Gold Finch 1.jpg",
       tags: "Bird Yellow Golden Finch"
-    },
-    {
-      orientation: "portrait",
-      type: "Nature",
-      source: "Photos/Sedona 1.jpeg",
-      tags: "Sedona Desert Mountain"
     },
     {
       orientation: "landscape",
@@ -303,12 +255,6 @@ const imageList = [
     {
       orientation: "landscape",
       type: "City",
-      source: "Photos/NY City.jpeg",
-      tags: "New York City Las Vegas"
-    },
-    {
-      orientation: "landscape",
-      type: "City",
       source: "Photos/NY Sign.JPG",
       tags: "New York City Sign Las Vegas"
     },
@@ -320,21 +266,9 @@ const imageList = [
     },
     {
       orientation: "landscape",
-      type: "City",
-      source: "Photos/Hoover Dam Sign.jpeg",
-      tags: "Hoover Dam Sign Desert"
-    },
-    {
-      orientation: "landscape",
       type: "Vehicles",
       source: "Photos/Goodyear Blimp.jpg",
       tags: "Goodyear Blimp"
-    },
-    {
-      orientation: "landscape",
-      type: "Objects",
-      source: "Photos/Jack'O Lantern.jpeg",
-      tags: "Pumpkin Jack'O Lantern Halloween"
     },
     {
       orientation: "landscape",
@@ -363,20 +297,8 @@ const imageList = [
     {
       orientation: "landscape",
       type: "Nature",
-      source: "Photos/Stars.jpeg",
-      tags: "Stars Night Sky"
-    },
-    {
-      orientation: "landscape",
-      type: "Nature",
       source: "Photos/Sunset.JPG",
       tags: "Sunset Sky"
-    },
-    {
-      orientation: "landscape",
-      type: "Animals",
-      source: "Photos/Rhinosaurus.jpg",
-      tags: "Rhinoceros"
     },
     {
       orientation: "landscape",
@@ -423,12 +345,6 @@ const imageList = [
     {
       orientation: "portrait",
       type: "Nature",
-      source: "Photos/White Moon 2.JPG",
-      tags: "White Moon Night"
-    },
-    {
-      orientation: "portrait",
-      type: "Nature",
       source: "Photos/Sunset Street.JPG",
       tags: "Sunset Sky Street"
     },
@@ -436,12 +352,6 @@ const imageList = [
       orientation: "portrait",
       type: "Nature",
       source: "Photos/Winter 2.jpg",
-      tags: "Snow Backyard Winter"
-    },
-    {
-      orientation: "landscape",
-      type: "Nature",
-      source: "Photos/Winter 1.jpeg",
       tags: "Snow Backyard Winter"
     },
     {
@@ -482,12 +392,6 @@ const imageList = [
     },
     {
       orientation: "portrait",
-      type: "City",
-      source: "Photos/Toronto 2 Buildings.jpg",
-      tags: "Toronto Buildings"
-    },
-    {
-      orientation: "portrait",
       type: "Nature",
       source: "Photos/Forest Road.jpeg",
       tags: "Forest Road"
@@ -512,27 +416,9 @@ const imageList = [
     },
     {
       orientation: "landscape",
-      type: "City",
-      source: "Photos/Hoover Dam POV.jpg",
-      tags: "Hoover Dam"
-    },
-    {
-      orientation: "landscape",
       type: "Nature",
       source: "Photos/Grand Canyon Zoomed Out Wide-Angle.jpg",
       tags: "Grand Canyon Desert Mountains"
-    },
-    {
-      orientation: "landscape",
-      type: "Objects",
-      source: "Photos/5 Rings.JPG",
-      tags: "Rings"
-    },
-    {
-      orientation: "landscape",
-      type: "Nature",
-      source: "Photos/3 Color Water.jpg",
-      tags: "Water Blue Lake"
     },
     {
       orientation: "portrait",
@@ -560,12 +446,6 @@ const imageList = [
     },
     {
       orientation: "portrait" ,
-      type: "Vehicles",
-      source: "Photos/CRV Back Light.jpg" ,
-      tags: "Car Back Light"
-    },
-    {
-      orientation: "portrait" ,
       type: "Nature",
       source: "Photos/Grand Canyon Cliffs 2.jpg" ,
       tags: "Grand Canyon Cliffs Desert"
@@ -581,12 +461,6 @@ const imageList = [
       type: "Nature",
       source: "Photos/Colorful Sky.jpg" ,
       tags: "Colorful Sky Sunset"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Nature",
-      source: "Photos/Water & Rocks.jpg" ,
-      tags: "Water Lake Rocks Blue"
     },
     {
       orientation: "landscape" ,
@@ -703,12 +577,6 @@ const imageList = [
       tags: "Bird Red Head"
     },
     {
-      orientation: "landscape" ,
-      type: "Animals",
-      source: "Photos/Bird with Red Head 2.jpg" ,
-      tags: "Bird Red Head"
-    },
-    {
       orientation: "portrait" ,
       type: "Nature",
       source: "Photos/Blue Skies With Cloud Lines.jpg" ,
@@ -727,18 +595,6 @@ const imageList = [
       tags: "Sunset Red Pink Sky"
     },
     {
-      orientation: "portrait" ,
-      type: "Animals",
-      source: "Photos/Grackle 1.jpg" ,
-      tags: "Blue Bird Black Fence Grackle"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Animals",
-      source: "Photos/Grackle 2.jpg" ,
-      tags: "Blue Bird Black Fence Grackle"
-    },
-    {
       orientation: "landscape" ,
       type: "Animals",
       source: "Photos/Grackle 3.jpg" ,
@@ -751,34 +607,16 @@ const imageList = [
       tags: "Green Leaves Trees"
     },
     {
-      orientation: "portrait" ,
-      type: "Objects",
-      source: "Photos/Himalayan Salt Rock Lamp.jpg" ,
-      tags: "Glowing Rocks Lamp Salt Orange Himalayan"
-    },
-    {
       orientation: "landscape" ,
       type: "Nature",
       source: "Photos/Hoover Dam River.jpg" ,
       tags: "Desert River Hoover Dam Mountains"
     },
     {
-      orientation: "landscape" ,
-      type: "Objects",
-      source: "Photos/Light Fixture 2.jpg" ,
-      tags: "Shiny Light Fixture Golden"
-    },
-    {
       orientation: "portrait" ,
       type: "Animals",
       source: "Photos/Mourning Dove Sitting.jpg" ,
       tags: "Mourning Dove Bird"
-    },
-    {
-      orientation: "portrait" ,
-      type: "Nature",
-      source: "Photos/Pink Tree 1.jpg" ,
-      tags: "Pink Trees Flowers"
     },
     {
       orientation: "portrait" ,
@@ -859,33 +697,9 @@ const imageList = [
       tags: "Raven Bird Roof"
     },
     {
-      orientation: "portrait" ,
-      type: "Animals",
-      source: "Photos/Fluffy Raven.jpg" ,
-      tags: "Raven Bird Roof"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Animals",
-      source: "Photos/Purple Sky Raven.jpg" ,
-      tags: "Raven Bird Purple Roof"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Animals",
-      source: "Photos/Raven Solo Outline Right Roof.jpg" ,
-      tags: "Raven Bird Blue Roof"
-    },
-    {
       orientation: "landscape" ,
       type: "Animals",
       source: "Photos/Posing Swan.jpg" ,
-      tags: "Swan Water Bird"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Animals",
-      source: "Photos/Swimming Swan.jpg" ,
       tags: "Swan Water Bird"
     },
     {
@@ -921,12 +735,6 @@ const imageList = [
     {
       orientation: "landscape" ,
       type: "Animals",
-      source: "Photos/Deer 2.jpg" ,
-      tags: "Deer Grass"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Animals",
       source: "Photos/Deer 3.jpg" ,
       tags: "Deer Grass"
     },
@@ -946,18 +754,6 @@ const imageList = [
       orientation: "landscape" ,
       type: "Nature",
       source: "Photos/Mountain Cloud.jpg" ,
-      tags: "Clouds Blue Sky"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Nature",
-      source: "Photos/Fluffy Clouds.jpg" ,
-      tags: "Clouds Blue Sky"
-    },
-    {
-      orientation: "landscape" ,
-      type: "Nature",
-      source: "Photos/Fluffy Clouds 2.jpg" ,
       tags: "Clouds Blue Sky"
     },
   ];
