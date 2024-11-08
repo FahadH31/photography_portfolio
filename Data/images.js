@@ -756,4 +756,34 @@ const imageList = [
       source: "Photos/Mountain Cloud.jpg" ,
       tags: "Clouds Blue Sky"
     },
+    {
+      orientation: "landscape" ,
+      type: "Objects",
+      source: "Photos/PS2.jpg" ,
+      tags: "PS2 PlayStation Gaming"
+    },
+    {
+      orientation: "landscape" ,
+      type: "Objects",
+      source: "Photos/PS5.jpg" ,
+      tags: "PS5 PlayStation Gaming"
+    },
+    {
+      orientation: "portrait" ,
+      type: "Nature",
+      source: "Photos/Red Tree.jpg" ,
+      tags: "Tree Leaves Red Fall"
+    },
+    {
+      orientation: "landscape" ,
+      type: "Nature",
+      source: "Photos/Night Corn Maze.jpg" ,
+      tags: "Night Corn Fields Fall"
+    },
+    {
+      orientation: "landscape" ,
+      type: "Nature",
+      source: "Photos/Pumpkins.jpg" ,
+      tags: "Night Pumpkins Fall"
+    }
   ];
