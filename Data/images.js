@@ -37,6 +37,18 @@ const imageList = [
       tags: "Las Vegas Strip Desert"
     },
     {
+      orientation: "landscape",
+      type: "Animals",
+      source: "Photos/Arctic Wolf 1.jpg",
+      tags: "Wolf White Arctic Snow"
+    },
+    {
+      orientation: "portrait",
+      type: "Animals",
+      source: "Photos/Arctic Wolf 4.jpg",
+      tags: "Wolf White Arctic Snow"
+    },
+    {
       orientation: "portrait",
       type: "Nature",
       source: "Photos/Agakhan Museum.jpeg",
@@ -785,5 +797,11 @@ const imageList = [
       type: "Nature",
       source: "Photos/Pumpkins.jpg" ,
       tags: "Night Pumpkins Fall"
-    }
+    },
+    {
+      orientation: "landscape",
+      type: "Animals",
+      source: "Photos/Wolf Pack 1.jpg",
+      tags: "Wolf White Arctic Snow"
+    },
   ];
