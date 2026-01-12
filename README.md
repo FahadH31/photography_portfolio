@@ -1,1 +1,4 @@
-A simple portfolio website showcasing my best photography, built with vanilla HTML, CSS, & JS. My first personal project.
+### [**Check Out My Portfolio**](https://fahadh31.github.io/photography_portfolio/)<br>
+A simple portfolio website showcasing my best photography work, built with vanilla HTML, CSS, & JS.
+
+
